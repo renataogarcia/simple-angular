@@ -1,0 +1,13 @@
+<div class="hero-unit">
+
+    <h2>Contact details:</h2>
+
+    <form class="form-inline" name="contactForm" novalidate>
+        <input type="text" class="input-medium" placeholder="Name" ng-model="contact.name" autofocus>
+        <div class="input-prepend">
+            <span class="add-on"><i class="icon-envelope"></i></span>
+            <input class="span2" type="email" ng-model="contact.email" placeholder="Email">
+        </div>
+        <button id="saveBtn" class="btn btn-primary" ng-disabled="!contactForm.$valid || !contact.name" ng-click="save()">Save</button>
+    </form>
+</div>

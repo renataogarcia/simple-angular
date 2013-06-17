@@ -1,0 +1,31 @@
+<div class="hero-unit">
+    <h2>Contacts</h2>
+
+    <div ng-switch="(contacts | filter:contactSearch).length == 0">
+        <div ng-switch-when="true">
+            <p>No contacts found.</p>
+        </div>
+        <div>
+            <table class="table table-striped" ng-switch-default>
+                <thead>
+                <tr>
+                    <th>Name</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr ng-repeat="contact in contacts | filter:contactSearch"
+                    ng-animate="{ leave: 'fade-out' }">
+                    <td>
+                        <a href="" ng-click="edit(contact)">{{contact.name}}</a>
+                        <a href="" ng-click="remove($index)" name="remove"><i class="icon-remove"></i></a>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+
+    </div>
+
+    <input type="text" ng-model="contactSearch" placeholder="Filter"/>
+    <button id="newBtn" class="btn btn-primary" ng-click="add()"><i class="icon-plus icon-white"></i> New</button>
+</div>

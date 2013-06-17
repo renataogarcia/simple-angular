@@ -1,0 +1,15 @@
+.fade-out {
+    -webkit-transition: all linear 0.5s;
+    -moz-transition: all linear 0.5s;
+    -ms-transition: all linear 0.5s;
+    -o-transition: all linear 0.5s;
+    transition: all linear 0.5s;
+
+    opacity: 1;
+    line-height: 20px;
+}
+
+.fade-out.fade-out-active {
+    opacity: 0;
+    line-height: 0;
+}

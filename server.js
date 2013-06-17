@@ -4,4 +4,7 @@ var app = express();
 app.use(express.compress());
 app.use(express.static(__dirname + '/app'));
 
-app.listen(process.env.PORT || 5000);
+var port = process.env.PORT || 5000;
+app.listen(port, function() {
+  console.log("Listening on " + port);
+});

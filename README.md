@@ -1,10 +1,10 @@
 simple-angular
 ==============
 
-This a very simple AngularJS Project used for the QLD JVM group meetup
+This is a very simple AngularJS Project used for the QLD JVM group meetup,
 which demostrates the basics of AngularJS framework concepts.
 
-It also contains examples for unit test using Jasmine and functional tests using Angular Scenario.
+It also contains examples for unit tests using Jasmine and functional tests using Angular Scenario.
 
 Demo
 ----
